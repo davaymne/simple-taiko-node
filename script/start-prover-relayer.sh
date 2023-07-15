@@ -21,7 +21,7 @@ if [ "$ENABLE_PROVER" == "true" ]; then
         --zkevmRpcdParamsPath /data \
         --l1.proverPrivKey ${L1_PROVER_PRIVATE_KEY} \
         --maxConcurrentProvingJobs 1
-        --gasLimit 150000000000
+        --gasLimit 150000000000 # 150GWEI
 else
     sleep infinity
 fi
