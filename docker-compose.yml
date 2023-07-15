@@ -74,7 +74,7 @@ services:
     <<: *logging
 
   taiko_client_prover_relayer:
-    image: davaymne/taiko-client:v0.0.1
+    image: davaymne/taiko-client:v0.0.2
     restart: unless-stopped
     pull_policy: always
     depends_on:
@@ -92,7 +92,7 @@ services:
     <<: *logging
 
   taiko_client_proposer:
-    image: gcr.io/evmchain/taiko-client:grimsvotn
+    image: davaymne/taiko-client:v0.0.2
     restart: unless-stopped
     pull_policy: always
     depends_on:
