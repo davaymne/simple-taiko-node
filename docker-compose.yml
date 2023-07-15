@@ -74,7 +74,7 @@ services:
     <<: *logging
 
   taiko_client_prover_relayer:
-    image: gcr.io/evmchain/taiko-client:grimsvotn
+    image: davaymne/taiko-client:v0.0.1
     restart: unless-stopped
     pull_policy: always
     depends_on:
